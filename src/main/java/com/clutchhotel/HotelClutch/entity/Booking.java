@@ -3,7 +3,6 @@ package com.clutchhotel.HotelClutch.entity;
 import jakarta.persistence.*;
 import jakarta.validation.constraints.Future;
 import jakarta.validation.constraints.Min;
-import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;
 import lombok.Data;
 
@@ -42,7 +41,6 @@ public class Booking {
     @JoinColumn(name = "room_id")
     private Room room;
 
-
     public void caculateTotalNumOfGuests() {
         this.totalNumOfGuests = this.numOfChildren + this.numOfAdults;
     }
@@ -67,8 +65,6 @@ public class Booking {
                 ", numOfChildren=" + numOfChildren +
                 ", totalNumOfGuests=" + totalNumOfGuests +
                 ", bookingConfirmationCode='" + bookingConfirmationCode + '\'' +
-                ", user=" + user +
-                ", room=" + room +
                 '}';
     }
 }
