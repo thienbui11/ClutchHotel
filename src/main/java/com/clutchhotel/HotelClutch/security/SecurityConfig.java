@@ -1,6 +1,6 @@
 package com.clutchhotel.HotelClutch.security;
 
-import com.clutchhotel.HotelClutch.service.interfac.CustomerUserDetailsService;
+import com.clutchhotel.HotelClutch.service.CustomerUserDetailsService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

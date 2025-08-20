@@ -1,6 +1,6 @@
 package com.clutchhotel.HotelClutch.security;
 
-import com.clutchhotel.HotelClutch.service.interfac.CustomerUserDetailsService;
+import com.clutchhotel.HotelClutch.service.CustomerUserDetailsService;
 import com.clutchhotel.HotelClutch.utils.JWTUtils;
 import jakarta.servlet.FilterChain;
 import jakarta.servlet.ServletException;
