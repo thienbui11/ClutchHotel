@@ -2,7 +2,6 @@ package com.clutchhotel.HotelClutch.service.impl;
 
 import com.clutchhotel.HotelClutch.dto.BookingDTO;
 import com.clutchhotel.HotelClutch.dto.Response;
-import com.clutchhotel.HotelClutch.dto.RoomDTO;
 import com.clutchhotel.HotelClutch.entity.Booking;
 import com.clutchhotel.HotelClutch.entity.Room;
 import com.clutchhotel.HotelClutch.entity.User;
@@ -15,9 +14,11 @@ import com.clutchhotel.HotelClutch.service.interfac.IRoomService;
 import com.clutchhotel.HotelClutch.utils.Utils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Sort;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 
+@Service
 public class BookingService implements IBookingService {
 
     @Autowired
