@@ -17,7 +17,7 @@ public class Utils {
 
     private static final SecureRandom secureRandom = new SecureRandom();
 
-    public static String generateRandomString(int length) {
+    public static String generateRandomConfirmationCode(int length) {
         StringBuilder stringBuilder = new StringBuilder();
         for (int i = 0; i < length; i++) {
             int randomIndex = secureRandom.nextInt(ALPHANUMERIC_STRING.length());
@@ -62,6 +62,21 @@ public class Utils {
         bookingDTO.setTotalNumOfGuest(booking.getTotalNumOfGuests());
         bookingDTO.setBookingConfirmationCode(booking.getBookingConfirmationCode());
         return bookingDTO;
+    }
+
+    public static RoomDTO mapRoomEntityToRoomDTOPlusBookings(Room room) {
+        RoomDTO roomDTO = new RoomDTO();
+
+        roomDTO.setId(room.getId());
+        roomDTO.setRoomType(room.getRoomType());
+        roomDTO.setRoomPrice(room.getRoomPrice());
+        roomDTO.setRoomPhotoUrl(room.getRoomPhotoUrl());
+        roomDTO.setRoomDescription(room.getRoomDescription());
+
+        if (room.getBookings() != null) {
+            roomDTO.setBookings(room.getBookings().stream().map(Utils::mapBookingEntityToBookingDTO).collect(Collectors.toList()));
+        }
+        return roomDTO;
     }
 
     public static BookingDTO mapBookingEntityToBookingDTOPlusBookedRooms(Booking booking, boolean mapUser) {
