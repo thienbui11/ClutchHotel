@@ -39,7 +39,7 @@ ClutchHotel is a **full-stack hotel management application** developed following
 
 - Java 11+ (JDK)
 - Node.js & npm
-- Docker & Docker Compose (optional)
+- Docker & Docker Compose
 - Git
 
 ### Setup Steps
