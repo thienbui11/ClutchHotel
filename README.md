@@ -23,11 +23,6 @@ ClutchHotel is a **full-stack hotel management application** developed following
   - Dockerized backend and frontend for local deployment
   - Authentication & role-based access control
 
-- **Bonus Integrations** (optional after tutorial):
-  - Image upload for rooms (via local storage or cloud)
-  - Booking notifications (email or SMS)
-  - Docker Compose orchestration for a one-command setup
-
 ## Tech Stack
 
 | Layer               | Technologies                          |
