@@ -2,15 +2,13 @@ import axios from "axios";
 
 export default class ApiService {
 
-    static BASE_URL = "https://localhost:8040"
+    static BASE_URL = "http://localhost:8040"
 
-    static getHeader(){
+    static getHeader() {
         const token = localStorage.getItem("token");
         return {
-            headers: {
-                Authorization: `Bearer ${token}`,
-                "Content-Type": "application/json"
-            }
+            Authorization: `Bearer ${token}`,
+            "Content-Type": "application/json"
         };
     }
 
