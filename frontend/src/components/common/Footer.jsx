@@ -1,9 +1,9 @@
 const FooterComponent = () => {
     return(
         <footer>
-            <span>
+            {/* <span>
                 Clutch Hotel
-            </span>
+            </span> */}
         </footer>
     )
 }
