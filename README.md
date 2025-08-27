@@ -32,9 +32,9 @@ ClutchHotel is a **full-stack hotel management application** developed following
 
 | Layer               | Technologies                          |
 |--------------------|---------------------------------------|
-| Backend            | Java, Spring Boot, Hibernate, JWT     |
-| Frontend           | React.js, Bootstrap (or your chosen UI framework) |
-| Database           | MySQL or PostgreSQL                   |
+| Backend            | Spring Boot, Hibernate, JWT     |
+| Frontend           | React.js                              |
+| Database           | PostgreSQL                            |
 | API Documentation  | Swagger/OpenAPI                       |
 | DevOps             | Docker, Docker Compose, Git           |
 
