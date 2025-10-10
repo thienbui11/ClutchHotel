@@ -29,6 +29,7 @@ jobs:
 
       - name: Build & Test
         run: |
+          chmod +x ./mvnw
           ./mvnw -B -e -DskipTests=false test
           ./mvnw -B -e -DskipTests package
 
