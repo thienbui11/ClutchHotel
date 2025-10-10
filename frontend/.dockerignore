@@ -1,0 +1,19 @@
+# Node and build artifacts
+node_modules
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-store
+.DS_Store
+/build
+
+# IDE
+.idea/
+.vscode/
+*.iml
+
+# VCS
+.git
+.gitignore
+.gitattributes
+
